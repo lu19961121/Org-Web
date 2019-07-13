@@ -1,0 +1,18 @@
+
+.container > div {
+    border-radius: 5px;
+    margin: 10px;
+  padding: 10px;
+  border: 2px solid red;
+  text-align: center;
+}
+.container {
+    display: grid;
+    grid-auto-rows: minmax(300px, auto);
+    grid-template-columns: repeat(2, 2fr);
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}

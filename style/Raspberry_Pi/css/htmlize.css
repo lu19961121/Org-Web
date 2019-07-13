@@ -27,13 +27,13 @@ span.todo.TODO {
 span.done.DONE {
     padding: 5px;
     border-radius: 10px;
-    background-color: black;
+    background-color: green;
     color: white;
 }
 
 /* Postamble */
 #postamble {
-    background-color: darkturquoise;
+    background-color: black;
     margin-top: 20px;
     padding: 5px;
     font-size: 80%;

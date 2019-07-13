@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+
+#+options: html-link-use-abs-url:nil html-postamble:auto
+#+options: html-preamble:t html-scripts:nil html-style:nil
+#+options: html5-fancy:nil tex:t creator:t
+#+html_doctype: xhtml-strict
+#+html_container: div
+#+description:
+#+keywords:
+#+html_link_home:
+#+html_link_up:
+#+html_head: <link rel="stylesheet" type="text/css" href="home.css" />
+#+html_head_extra:
+#+title: Homepage
+#+subtitle:
+#+infojs_opt:
+#+creator: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.2 (<a href="https://orgmode.org">Org</a> mode 9.2.4)
+#+latex_header:
+
+#+setupfile: setup/theme-Raspberry_Pi-local.setup
+
+#+begin_export html 
+
+<div class = "container">
+  <div>
+    <a href="file/Origami/Origami.html">
+      <img src="http://erikdemaine.org/classes/6.849_square.jpg">
+    Origami
+    </a>
+  </div>
+  <div>
+    <a href="file/Org-mode/Org-mode.html">
+      <img src="https://orgmode.org/img/org-mode-unicorn-logo.png">
+      Org-mode
+    </a>
+  </div>
+  <div>
+    <a href="file/LaTeX/index.html">
+      <img >
+      LaTeX
+    </a>
+  </div>
+  <div>
+    <a href="file/CV/Curiculum_Vitae.pdf">
+      <img>
+      CV
+    </a>
+  </div>
+</div>
+#+end_export
