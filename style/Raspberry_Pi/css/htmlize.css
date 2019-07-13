@@ -1,0 +1,41 @@
+body {
+    margin: auto 20%;
+}
+
+.title {
+    text-align: center;
+    text-shadow: red 1px 1px;
+}
+
+/* TODO */
+
+span.todo {
+    font-size: 80%;
+}
+
+span.done {
+    font-size: 80%;
+}
+
+span.todo.TODO {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+}
+
+span.done.DONE {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+/* Postamble */
+#postamble {
+    background-color: darkturquoise;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 80%;
+    color: green;
+}
