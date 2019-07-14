@@ -33,9 +33,10 @@ span.done.DONE {
 
 /* Postamble */
 #postamble {
-    background-color: black;
+    /*background-color: #f3b1b1;*/
     margin-top: 20px;
     padding: 5px;
     font-size: 80%;
     color: green;
+    text-align: center;
 }

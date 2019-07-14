@@ -10,7 +10,7 @@
 #+html_link_home:
 #+html_link_up:
 #+html_mathjax:
-#+html_head:
+#+html_head: <link rel="stylesheet" type="text/css" href="../../../../../style/Raspberry_Pi/css/htmlize.css"/>
 #+html_head_extra:
 #+subtitle:
 #+infojs_opt:
@@ -31,8 +31,6 @@
 #+exclude_tags: noexport
 #+creator: Emacs 26.2 (Org mode 9.2.4)
 
-#+setupfile: setup/theme-Raspberry_Pi-local.setup
-
 * Hello World!
 
 * TODO CSS
@@ -48,4 +46,14 @@
   (org-html--translate "Updated" info)
 #+end_src
 
-** TODO enable "Validate"
+** DONE enable "Validate"
+
+In your .emacs file, write it down:
+
+#+begin_src emacs-lisp
+  (setq org-html-validation-link nil)
+#+end_src
+
+[[https://stackoverflow.com/questions/15134911/in-org-mode-how-do-i-remove-the-validate-xhtml-1-0-message-from-html-export][This is my search.]]
+
+** TODO MathJaX
