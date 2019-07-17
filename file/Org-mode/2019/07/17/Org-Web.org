@@ -46,7 +46,7 @@
   (org-html--translate "Updated" info)
 #+end_src
 
-** DONE enable "Validate"
+** DONE disable "Validate"
 
 In your .emacs file, write it down:
 
