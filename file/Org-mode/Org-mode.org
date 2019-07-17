@@ -32,4 +32,4 @@
 #+creator: Emacs 26.2 (Org mode 9.2.4)
 
 - [[file:2019/07/13/Org-XeLaTeX-html%20.html][人文社科类学位论文写作——LaTeX轻量级应用]] <2019-07-13 周六>
-- [[file:2019/07/17/Org-Web.html][Org-mode 自定义网页]] <2019-07-14 周日>
+- [[file:2019/07/17/Org-Web.html][Org-mode 自定义网页]] <2019-07-17 周三>
