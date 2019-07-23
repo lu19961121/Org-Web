@@ -139,3 +139,6 @@ SPSS良心14天试用期够用了，如果你经常要写论文，推荐学习�
  [7] [[https://zhuanlan.zhihu.com/p/64555335]]
 
  [8] [[https://github.com/jkitchin/org-ref/blob/master/org-ref.org]]
+
+
+[[https://www.adobe.com/content/dam/acom/en/legal/images/badges/PDF_24.png]] [[file:Org-XeLaTeX.pdf][PDF 版本]]下载
