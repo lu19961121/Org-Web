@@ -62,15 +62,17 @@
   </div>
   <div class = "container">
     <p class = "image">
-      <a href="file/LaTeX/index.html", target = "blank">
-	<img src="#"/>
+      <a href="https://github.com/Tom007Cheung/Org-Web/blob/master/file/Org-mode/2019/07/13/ecnu.sty", target = "blank">
+	<img src="http://met.guc.edu.eg/OnlineTutorials/static/article_media/latex/lion.jpg"/>
       </a>
     </p>
     <p class = "heading">
-      LaTeX
+      <a href="https://github.com/Tom007Cheung/Org-Web/blob/master/file/Org-mode/2019/07/13/ecnu.sty", target = "blank">
+	LaTeX
+      </a>      
     </p>
     <p class = "caption">
-
+      TeX is great!
     </p>    
   </div>
   <div class = "container">
