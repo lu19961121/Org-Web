@@ -31,22 +31,29 @@
 #+exclude_tags: noexport
 #+creator: Emacs 26.2 (Org mode 9.2.4)
 
-#+setupfile: c:/Users/Mr.NLP/Desktop/Org-Web/setup/theme-Raspberry_Pi-local.setup
+#+begin_export html
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async src="path-to-mathjax/MathJax.js?config=TeX-AMS_CHTML"></script>
+#+end_export
 
 * 写作缘由
-LaTeX的论文排版无可替代，而学校不会专门教排版设计。
+$\LaTeX$的论文排版无可替代，而学校不会专门教排版设计。
 针对人文社科类学位论文写作，从基本的文字编辑，数据分析，进度管理，版本控制到最后的排版设计，笔者写下这篇文章，
 希望能够帮助大家完成自己的
 毕业论文。
-笔者默认你使用 @@html:<i class="fab fa-windows"></i>@@  Windows10操作系统，
+默认读者使用 @@html:<i class="fab fa-windows"></i>@@  Windows10操作系统，
 @@html:<i class="fab fa-apple"></i>@@  Mac 原理一样，Linux...@@html:<i class="fab fa-linux"></i>@@ 嗯，你应该比我知道的多。
 * 文字编辑
 ** Org-mode 安装
-注：下列键盘符号 C 代表 Ctrl 键， M 代表 Alt 键，RET 代表回车，小写字母就是实际字母。
+注：在 buffer 中，C 代表 @@html:<kbd>Ctrl</kbd>@@ 键， M 代表 @@html:<kbd>Alt</kbd>@@ 键，RET 代表 @@html:<kbd>Enter</kbd>@@，小写字母就是实际字母。
 
  - 下载[[https://www.gnu.org/software/emacs/download.html][Emacs]] 26.2，安装最新版 [[https://orgmode.org/elpa.html][Org-mode]] 9.2.4，官网说的配置文件 *init file* 需要新建：
- - 打开 *runemaca.exe* ，C-x C-f 输入 *.emacs* ，新建完成
- - 按照官网介绍操作，安装完成后，M-x org-version，应该就是与官网一致的版本。
+ - 打开 *runemacs.exe* ，@@html:<kbd>Ctrl</kbd> <kbd>x</kbd>@@ @@html:<kbd>Ctrl</kbd> <kbd>f</kbd>@@ 输入 *.emacs* ，新建完成
+ - 按照官网介绍操作，安装完成后，@@html:<kbd>Alt</kbd> <kbd>x</kbd>@@ org-version，应该就是与官网一致的版本。
 ** 基本操作
 参照国外大佬的[[https://pan.baidu.com/s/1p6CRrnt6c0WrROvLW0BjRA%20][视频（提取码：26qz ）]]，主要记 *快捷键* （输入字母可以识别，但不是最新的，比如大写字母都改小写了），介绍顺序在[[https://orgmode.org/worg/org-tutorials/org-screencasts/org-mode-google-tech-talk.html][这儿]]。
 ** 特殊写作环境
@@ -68,7 +75,7 @@ LaTeX的论文排版无可替代，而学校不会专门教排版设计。
 
 2.代码
 
-C-c C-,
+@@html:<kbd>Ctrl</kbd> <kbd>c</kbd>@@ @@html:<kbd>Ctrl</kbd> <kbd>,</kbd>@@
 
 默认为verbatim环境，
 如果要用 minted 宏包，确认你有安装了Python包pygments，建议安装 *Anaconda* ，然后在 #+begin
@@ -84,34 +91,34 @@ SPSS良心14天试用期够用了，如果你经常要写论文，推荐学习�
 * 版本控制 [[https://git-scm.com/downloads][Git]] （可选）
 [[https://www.liaoxuefeng.com/wiki/896043488029600][廖雪峰的Git教程]]
 * 协同写作
-C-c C-e 导出utf-8文本，供导师修改（反正排版是最后做的）。
+@@html:<kbd>Ctrl</kbd> <kbd>c</kbd>@@ @@html:<kbd>Ctrl</kbd> <kbd>e</kbd>@@ 导出utf-8文本，供导师修改（反正排版是最后做的）。
 * 排版设计
 笔者在设计过程中发现Org-mode中用 XeLaTeX 写中文文档很早就有人写配置（添加在 *.emacs* 文件的）了，
-现状笔者添加到 ox-latex.el里，然后编译：M-x byte-compile-file（支持 TAB 键自动补全），重新打开 runemacs.exe （推荐
-添加到桌面快捷方式）就可以使用了。
-所有文本写完之后，跳到开头，C-c C-e #，输入latex，应该可以看到一下信息：
+现在笔者添加到 [[https://github.com/Tom007Cheung/Org-XeLaTeX/blob/master/ox-latex.el][ox-latex.el]] 里，然后编译：@@html:<kbd>Alt</kbd> <kbd>x</kbd>@@ byte-compile-file（支持 @@html:<kbd>TAB</kbd>@@ 键自动补全），
+重新打开 runemacs.exe （推荐添加到桌面快捷方式）就可以使用了。
+所有文本写完之后，跳到开头，@@html:<kbd>Ctrl</kbd> <kbd>c</kbd>@@ @@html:<kbd>Ctrl</kbd> <kbd>e</kbd> <kbd>#</kbd>@@，输入latex，应该可以看到一下信息：
 
-#+BEGIN_SRC emacs-lisp
-#+latex_class: ctexrep
-#+latex_class_options:<默认为[12pt, a4paper],可以自己设置>
-#+latex_header:{\usepackage{学校 \LaTeX 模板样式（.sty结尾），我用的 ecnu}
-#+latex_header_extra:
-#+description:
-#+keywords:
-#+subtitle:
-#+author: 
-#+title: <默认显示你的文件名>
-#+latex_compiler: xelatex
-#+date: \today 
-#+END_SRC
+#+begin_src org
+  ,#+latex_class: ctexrep
+  ,#+latex_class_options:<默认为[12pt, a4paper],可以自己设置>
+  ,#+latex_header:\usepackage{学校 \LaTeX 模板样式（.sty结尾），我用的 ecnu}
+  ,#+latex_header_extra:
+  ,#+description:
+  ,#+keywords:
+  ,#+subtitle:
+  ,#+title: <默认显示你的文件名>
+  ,#+latex_compiler: xelatex
+  ,#+date: \today
+#+end_src
 
-author，title，date可以删掉，如果有学校封面。
+如果有学校封面，title，date可以删掉。
 
-表格，图片一律使用图片导入：C-c C-l file，选择你的图片路径即可。
+表格，图片一律使用图片导入：@@html:<kbd>Ctrl</kbd> <kbd>c</kbd>@@ @@html:<kbd>Ctrl</kbd> <kbd>l</kbd>@@ file，选择你的本地图片路径即可。
 示例：
 [[https://orgmode.org/img/org-mode-unicorn-logo.png]]
 ** 安装 [[https://zhuanlan.zhihu.com/p/64555335][TeXLive]]（强烈推荐）2019
-安装完成后，打开你的 *.org* 文件，C-c C-e l o，即可打开编译好的 *pdf* 文件，当然可以自己改一下
+安装完成后，打开你的 *.org* 文件，@@html:<kbd>Ctrl</kbd> <kbd>c</kbd> <kbd>Ctrl</kbd> <kbd>e</kbd> <kbd>l</kbd> <kbd>o</kbd>@@，
+即可打开编译好的 *pdf* 文件，当然可以自己改一下
 *.tex* 文件，这样排版工作量就会少很多。
 * 参考链接
 ** 基于 gbt-7714-2015 格式参考文献编译
