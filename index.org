@@ -62,12 +62,12 @@
   </div>
   <div class = "container">
     <p class = "image">
-      <a href="https://github.com/Tom007Cheung/Org-Web/blob/master/file/Org-mode/2019/07/13/ecnu.sty", target = "blank">
+      <a href="https://github.com/Tom007Cheung/Org-Web/blob/master/file/Org-mode/2019/07/23/ecnu.sty", target = "blank">
 	<img src="http://met.guc.edu.eg/OnlineTutorials/static/article_media/latex/lion.jpg"/>
       </a>
     </p>
     <p class = "heading">
-      <a href="https://github.com/Tom007Cheung/Org-Web/blob/master/file/Org-mode/2019/07/13/ecnu.sty", target = "blank">
+      <a href="https://github.com/Tom007Cheung/Org-Web/blob/master/file/Org-mode/2019/07/23/ecnu.sty", target = "blank">
 	LaTeX
       </a>      
     </p>
