@@ -78,7 +78,7 @@
   <div class = "container">
     <p class = "image">
       <a href="file/CV/Curiculum_Vitae.pdf", target = "blank">
-	<img src="#"/>
+	<img src="file/CV/ScreenShot.PNG", target = "blank"/>
       </a>
     </p>
     <p class = "heading">
