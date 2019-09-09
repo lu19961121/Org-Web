@@ -24,9 +24,6 @@
 
 #+begin_export html 
 <script src="./app.bundle.js"></script>
-<div class = "heading">
-  Next Step: WebGL (3D Animation of Animals)
-</div>
 
 <div>
   <div class = "container">
