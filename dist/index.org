@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+#+options: html-link-use-abs-url:nil html-postamble:auto
+#+options: html-preamble:t html-scripts:nil html-style:nil
+#+options: html5-fancy:nil tex:t creator:t author:nil
+#+html_doctype: xhtml-strict
+#+html_container: div
+#+description:
+#+keywords:
+#+html_link_home:
+#+html_link_up:
+#+html_mathjax:
+#+html_head:<link rel="stylesheet" type="text/css" href="home.css" />
+#+html_head:<script src="./print.bundle.js"></script>
+#+html_head_extra:
+#+title: Homepage
+#+subtitle:
+#+infojs_opt:
+#+creator: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 27.0.50 (<a href="https://orgmode.org">Org</a> mode 9.2.5)
+#+latex_header:
+
+
+#+setupfile: setup/theme-Raspberry_Pi-local.setup
+
+#+begin_export html 
+<script src="./app.bundle.js"></script>
+
+<div>
+  <div class = "container">
+    <p class = "image">
+      <a href="file/Origami/Origami.html", target = "blank">
+	<img src="http://erikdemaine.org/classes/6.849_square.jpg">
+      </a>
+    </p>
+    <p class = "heading">
+      <a href="file/Origami/Origami.html", target = "blank">
+	Origami
+      </a>
+    </p>
+    <p class = "caption">
+      Inspired by <a href="http://erikdemaine.org/", target = "blank">Erik Demaine</a>.
+    </p>
+  </div>
+  <div class = "container">
+    <p class = "image">
+      <a href="file/Org-mode/Org-mode.html", target = "blank">
+	<img src="https://orgmode.org/img/org-mode-unicorn-logo.png">
+      </a>
+    </p>    
+    <p class = "heading">
+      <a href="file/Org-mode/Org-mode.html", target = "blank">
+	Org-mode
+      </a>      
+    </p>
+    <p class = "caption">
+      Like
+      <a href = "https://github.com/fniessen/org-html-themes", target = "blank">
+	fniessen
+      </a>
+      's Themesetups.
+    </p>    
+  </div>
+  <div class = "container">
+    <p class = "image">
+      <a href="https://github.com/Tom007Cheung/Org-Web/blob/master/file/Org-mode/2019/07/23/ecnu.sty", target = "blank">
+	<img src="http://met.guc.edu.eg/OnlineTutorials/static/article_media/latex/lion.jpg"/>
+      </a>
+    </p>
+    <p class = "heading">
+      <a href="https://github.com/Tom007Cheung/Org-Web/blob/master/file/Org-mode/2019/07/23/ecnu.sty", target = "blank">
+	LaTeX
+      </a>      
+    </p>
+    <p class = "caption">
+      TeX is great!
+    </p>    
+  </div>
+  <div class = "container">
+    <p class = "image">
+      <a href="file/CV/Curiculum_Vitae.pdf", target = "blank">
+	<img src="file/CV/ScreenShot.PNG", target = "blank"/>
+      </a>
+    </p>
+    <p class = "heading">
+      <a href="file/CV/Curiculum_Vitae.pdf", target = "blank">
+	简历
+      </a>      
+    </p>
+    <p class = "caption">
+      Thanks to
+      <a href="https://github.com/ArthurBernard/Arthur-CV-LaTeX", target = "blank">
+	ArthurBernard
+      </a>
+      .
+    </p>    
+  </div>
+</div>
+#+end_export
